@@ -9,10 +9,10 @@ select * from pharmacists;
 alter table patients drop column location;
 
 insert into doctors(dname,speciality,emailid,pwd,mobileno,location) values("Imman","General"
-"immanual65@gmail.com","12345","01708625386","Dhaka");
+"example@gmail.com","12345","01234567890","Dhaka");
 
 alter table doctors add column fees int;
-insert into patients (address) value ("29th Agargaon, Sher-e-Bangla Nagar, Dhaka 1207") where pid=1;
+insert into patients (address) value ("29th Tangail, Santosh-e-Bangla Nagar, Tangail 1902") where pid=1;
 create table prescriptions(
 
 	pid int,
@@ -28,5 +28,5 @@ primary key(address)
 
 );
 select * from prescriptions;
-insert into address value("29th Agargaon, Sher-e-Bangla Nagar, Dhaka 1207");
+insert into address value("29th Tangail, Santosh-e-Bangla Nagar, Tangail 1902");
 select * from address;
